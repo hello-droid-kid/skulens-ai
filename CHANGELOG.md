@@ -1,5 +1,44 @@
 # Changelog — SkuLens AI
 
+## v1.6.0 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.6.0** (Build 9) (*Powered by Boostech Demo Tech*) — Fitur Penyimpanan Keranjang Multi-Barang (Persisten & Anti-Hilang).
+
+### Fitur & Peningkatan Utama
+- **Penyimpanan Keranjang Multi-Scan ("Bisa Disimpan, Jangan Hilang")**:
+  - Mengatasi keluhan hasil scan area meja yang langsung hilang saat barang diangkat kasir atau saat kamera bergeser.
+  - **Tombol Cepat Simpan**:
+    - Tombol `[ 💾 Simpan (X pcs) ]` langsung pada Peek Summary Bar di bawah layar.
+    - Tombol utama tebal `[ 💾 Simpan ke Keranjang (X pcs • Rp ...) ]` di dalam Drawer Hasil Area.
+    - Sekali ketuk, semua barang yang terdaftar dan terdeteksi di area langsung tersimpan ke keranjang lokal dengan suara konfirmasi ceria (*chime*).
+  - **Penyimpanan Permanen (Persisten)**:
+    - Data keranjang disimpan secara lokal di SharedPreferences (`saved_multi_basket_json`).
+    - **Tidak akan hilang**: Tetap tersimpan utuh meskipun kasir memindahkan barang, mengarahkan kamera ke tempat lain, berpindah tab (Home/Scan/Model/Atur), bahkan saat aplikasi ditutup dan dibuka kembali.
+- **Drawer / Modal Keranjang Belanja Interaktif (`SavedBasketModal`)**:
+  - Akses satu ketukan via tombol mengambang `[ 🛒 X item ]` di HUD atas dan tombol `[ 🛒 Keranjang ]` di bar bawah.
+  - Menampilkan daftar lengkap: Foto thumbnail barang, Nama Produk, SKU, Harga satuan, dan Subtotal per item.
+  - **Kontrol Kuantitas Lengkap**:
+    - Tombol `[ + ]` untuk menambah jumlah pcs.
+    - Tombol `[ - ]` untuk mengurangi jumlah pcs.
+    - Tombol tong sampah merah `[ 🗑️ ]` saat kuantitas mencapai 1 untuk menghapus item secara aman.
+    - Tombol `[ 🗑️ Kosongkan ]` dengan dialog konfirmasi jika transaksi kasir telah selesai.
+    - Rekapitulasi otomatis: Total Kuantitas (pcs), Jumlah macam produk, dan Total Nilai Tagihan (Rupiah).
+- **Indikator Titik Oranye (Badge Dot) di Navigasi**:
+  - Tab **Multi** pada navbar bawah otomatis menyalakan titik oranye jika ada barang yang sedang tersimpan di keranjang, mengingatkan kasir bahwa ada transaksi yang siap diproses.
+- **Tombol Pintas Daftarkan Produk Baru**:
+  - Pada objek yang belum terdaftar di area, ditambahkan tombol `[ Daftarkan ]` yang langsung membuka alur scan dan pendaftaran produk.
+- **Pembaruan Versi Sistem**:
+  - Nomor versi aplikasi dinaikkan ke **v1.6.0** (Build 9) di Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Pengaturan.
+- **Pengujian & Verifikasi Langsung**:
+  - Diinstal dan diuji via *Wireless Debugging* pada perangkat kasir **iMin Swift 2 Pro** (Android 13).
+  - Terverifikasi penambahan kuantitas, kalkulasi total belanja (Rp 118.000 -> Rp 163.000), perpindahan tab tanpa kehilangan data, dan pengosongan keranjang berjalan 100% mulus.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.6.0.apk` (`97.06 MB`)
+- SHA-256: `27773289DA56A6C9FAF31423FF8C048ABD50F4466C0BC668A066CFE54876BD7C`
+
+---
+
 ## v1.5.0 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.5.0** (Build 8) (*Powered by Boostech Demo Tech*) — Tombol Lampu Flash Hardware & Kontrol Jeda (Pause) Rekam 360°.

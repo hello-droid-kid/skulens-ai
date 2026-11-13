@@ -4,16 +4,16 @@
   <p><strong>Smart Computer Vision &amp; SKU Recognition untuk Perangkat Android &amp; iMin POS</strong></p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-v1.5.0-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.5.0" />
+    <img src="https://img.shields.io/badge/Version-v1.6.0-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.6.0" />
     <img src="https://img.shields.io/badge/Offline_AI-100%25_On--Device-18181B?style=for-the-badge" alt="100% Offline" />
     <img src="https://img.shields.io/badge/Android-7.0%2B_(API_24%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 7.0+" />
     <img src="https://img.shields.io/badge/iMin_POS-Ready-F59E0B?style=for-the-badge" alt="iMin POS Ready" />
   </p>
 
   <p>
-    <a href="releases/SkuLens-AI-v1.5.0.apk"><strong>⬇️ Unduh APK Langsung (v1.5.0 — 97.01 MB)</strong></a>
+    <a href="releases/SkuLens-AI-v1.6.0.apk"><strong>⬇️ Unduh APK Langsung (v1.6.0 — 97.06 MB)</strong></a>
     &nbsp;•&nbsp;
-    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.5.0"><strong>📦 Halaman Release</strong></a>
+    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.6.0"><strong>📦 Halaman Release</strong></a>
     &nbsp;•&nbsp;
     <a href="CHANGELOG.md"><strong>📝 Catatan Rilis</strong></a>
   </p>
@@ -34,35 +34,41 @@
 | Item | Detail |
 | --- | --- |
 | **Nama Aplikasi** | SkuLens AI (`com.harapan.kenalbarang`) |
-| **Versi** | `v1.5.0` (Build 8 — Universal Debug APK) |
-| **Ukuran File** | `97.01 MB` (`SkuLens-AI-v1.5.0.apk`) |
+| **Versi** | `v1.6.0` (Build 9 — Universal Debug APK) |
+| **Ukuran File** | `97.06 MB` (`SkuLens-AI-v1.6.0.apk`) |
 | **Minimal OS** | Android 7.0 (API 24) ke atas, diuji langsung di iMin Swift 2 Pro (Android 13) |
-| **File APK** | [`releases/SkuLens-AI-v1.5.0.apk`](releases/SkuLens-AI-v1.5.0.apk) |
-| **SHA-256** | `0E772C0D71A2E970E40037D28A0848B3C1C7F847E91FB39613CF6B785681F00B` |
+| **File APK** | [`releases/SkuLens-AI-v1.6.0.apk`](releases/SkuLens-AI-v1.6.0.apk) |
+| **SHA-256** | `27773289DA56A6C9FAF31423FF8C048ABD50F4466C0BC668A066CFE54876BD7C` |
 
 ### Cara Install di HP Android / Perangkat iMin POS
 
-1. Unduh [`releases/SkuLens-AI-v1.5.0.apk`](releases/SkuLens-AI-v1.5.0.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
+1. Unduh [`releases/SkuLens-AI-v1.6.0.apk`](releases/SkuLens-AI-v1.6.0.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
 2. Buka file APK dan aktifkan izin **Install dari sumber tidak dikenal** (*Install unknown apps*) jika diminta.
 3. Buka **SkuLens AI** dan berikan izin **Kamera** saat pertama kali dijalankan.
 
 *(Opsional via ADB dari PC / Wireless Debugging)*:
 ```bash
-adb install -r SkuLens-AI-v1.5.0.apk
+adb install -r SkuLens-AI-v1.6.0.apk
 ```
 
 ---
 
 ## Tampilan Aplikasi (Diuji di iMin Swift 2 Pro)
 
-| Cek Barang & Flash On | Rekam 360° (Jeda/Pause) | Dashboard & Grafik AI |
+| Keranjang Multi Tersimpan | Multi Area & HUD Keranjang | Cek Barang & Flash On |
 | :---: | :---: | :---: |
-| <img src="assets/screen-scanner-flash.png" width="220" alt="Cek Barang & Senter Flash" /> | <img src="assets/screen-scanner-rekam-paused.png" width="220" alt="Rekam 360 Jeda Kontrol" /> | <img src="assets/screen-home-charts.png" width="220" alt="Dashboard AI Charts" /> |
+| <img src="assets/screen-multi-basket-modal.png" width="220" alt="Keranjang Multi Tersimpan" /> | <img src="assets/screen-multi-basket-hud.png" width="220" alt="Multi Area & HUD Keranjang" /> | <img src="assets/screen-scanner-flash.png" width="220" alt="Cek Barang & Senter Flash" /> |
 
 ---
 
 ## Fitur Utama
 
+- **Penyimpanan Keranjang Multi-Scan (Anti-Hilang)**:
+  - Tombol instan `[ 💾 Simpan ]` di bar bawah dan drawer untuk mengunci & menyimpan barang yang terdeteksi di area meja kasir.
+  - **Data Tidak Pernah Hilang**: Hasil deteksi barang tersimpan secara persisten di penyimpanan lokal, tidak hilang saat barang diangkat, kamera dipindah, atau saat berganti tab aplikasi.
+  - **Kelola Kuantitas**: Modal keranjang interaktif untuk menambah `[+]`, mengurangi `[-]`, atau menghapus item `[🗑️]` secara langsung.
+  - **Kalkulasi Otomatis**: Rekapitulasi jumlah pcs dan total tagihan rupiah otomatis. Tombol `[ 🗑️ Kosongkan ]` dengan dialog konfirmasi saat transaksi selesai.
+  - **Badge Navigasi**: Tab Multi pada navbar menyalakan titik oranye jika ada barang tersimpan di keranjang.
 - **Lampu Flash Kamera Hardware (LED Senter)**: Tombol cerdas `[ ⚡ Flash ]` di HUD kamera yang otomatis aktif jika perangkat memiliki lampu kilat kamera belakang (seperti pada iMin Swift 2 Pro), membantu pengenalan akurat di ruangan minim cahaya.
 - **Kontrol Jeda (Pause) Rekam 360° Terpadu**:
   - Tombol Mengambang `[ ⏸️ Jeda Auto ]` / `[ ▶️ Lanjut Auto ]` langsung di viewport kamera untuk membekukan jepretan otomatis saat memutar barang.
