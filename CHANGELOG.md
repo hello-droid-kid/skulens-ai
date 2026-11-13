@@ -1,5 +1,35 @@
 # Changelog — SkuLens AI
 
+## v1.9.3 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.9.3** (Build 15) (*Powered by Boostech Demo Tech*) — Perapihan Menyeluruh Tampilan Multi-Scan (Bebas dari Grid 3x3 "AI 3x9"), Toolbar 1 Baris Ramping, Notifikasi Top Colorful Toast, & Penyelesaian Tuntas Bug Reset Sesi Kasir.
+
+### Fitur & Peningkatan Utama
+- **Perapihan Tampilan Multi-Scan (Bebas Grid 3x3 "AI 3x9")**:
+  - Menghapus mode manual *Grid 3x3* (9 kotak kecil) yang sebelumnya memecah layar menjadi 9 kotak garis putus-putus.
+  - Pemindaian kini 100% menggunakan AI otomatis on-device (**YOLOv8-Seg GPU + ByteTrack + OpenCV**) tanpa garis grid yang mengganggu pandangan kasir.
+- **Penyederhanaan Toolbar Atas Menjadi 1 Baris Ramping**:
+  - Menggabungkan 2 baris tombol mengambang menjadi **1 baris ramping & rapi**:
+    - **Kiri**: Status `• YOLO GPU`, quick toggle `+ Qty: ON`, dan quick toggle `Teks: Rapi`.
+    - **Kanan**: Tombol bundar **Flash** (⚡) dan tombol bundar **Live / Beku** (⏸️/▶️).
+  - Tampilan kamera tengah kini 100% bebas hambatan visual untuk pemantauan barang kasir.
+- **Perbaikan Tuntas Bug Reset Sesi Multi-Scan ("Saat Dikosongkan Tetap Ada Datanya")**:
+  - **Stabilisasi 3.5 Detik**: Barang yang dikosongkan/dihapus tidak akan terbaca kembali selama masih berada di meja. Status deteksi baru diizinkan aktif kembali jika barang sudah benar-benar dipindahkan dari meja minimal 3.5 detik.
+  - **Peek Bar Bawah Bersih Seketika**: Saat tombol *"Reset Sesi" -> "Ya, Kosongkan"* ditekan, angka di lingkaran bawah langsung kembali ke **0** dan menampilkan *"Arahkan ke Area Meja Banyak Barang"*, tanpa ada sisa angka atau tombol hantu.
+- **Top Colorful Toast Notification**:
+  - Notifikasi konfirmasi dan pesan sistem dipindahkan ke bagian paling atas layar (`Alignment.TopCenter`) dengan kategori warna cerdas (Emerald untuk Sukses, Amber untuk Info/Hapus, Ruby untuk Error) dan tombol silang `(X)`.
+  - Tombol-tombol bawah kasir (Jepret, Rekam, Simpan SKU, Drawer Laporan, dsb.) 100% bebas dari gangguan snackbar.
+- **Pembaruan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.9.3** (Build 15) di seluruh layar antarmuka (`✨ v1.9.3 • On-Device`).
+- **Pengujian & Instalasi Langsung**:
+  - Berhasil dipasang dan diverifikasi via *Wireless Debugging* pada perangkat kasir **iMin Swift 2 Pro** (Android 13, 720x1600).
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.9.3.apk` (`79.27 MB`)
+- SHA-256: `109721E144491E5C0024B96A2484EE9B097FEA78E715C9E5F6157288468BC2CD`
+
+---
+
 ## v1.9.2 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.9.2** (Build 14) (*Powered by Boostech Demo Tech*) — Perbaikan Bug Tombol Kosongkan Multi-Scan & Solusi Deteksi Barang Bertumpuk (Stacked Objects).
