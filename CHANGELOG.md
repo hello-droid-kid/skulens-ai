@@ -1,5 +1,36 @@
 # Changelog — SkuLens AI
 
+## v1.7.0 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.7.0** (Build 10) (*Powered by Boostech Demo Tech*) — Validasi Deteksi Kemiripan Visual AI $\ge$ 90% & Pencegahan Data Barang Ganda (Anti-Double).
+
+### Fitur & Peningkatan Utama
+- **Validasi AI Kemiripan Visual $\ge$ 90% (Pencegahan Barang Ganda)**:
+  - Mengatasi risiko kasir atau staf toko mendaftarkan ulang barang yang sebenarnya sudah ada di database sistem kasir.
+  - Saat kasir mengambil foto atau merekam 360° untuk mendaftarkan barang baru, sistem secara otomatis menghitung kecocokan *cosine embedding* AI terhadap seluruh produk yang telah tersimpan.
+  - **Banner Peringatan Visual Mencolok (Card Amber Alert)**:
+    - Muncul tepat di atas form pendaftaran barang jika kemiripan visual $\ge 90\%$.
+    - Menampilkan kartu produk yang cocok: foto thumbnail, nama produk, SKU, harga, dan badge persentase kecocokan (misal `94% Cocok`).
+    - **Tombol Pintas 1-Klik**: `[ ➕ Tambahkan ke "[Nama Barang]" (Cegah Double) ]` yang langsung mengalihkan ke tab *Tambah ke Barang Ada* dan memilih produk tersebut untuk memperkaya sampel sudut tanpa membuat data duplikat.
+  - **Dialog Konfirmasi Duplikasi Interaktif**:
+    - Jika kasir tetap menekan tombol simpan baru padahal foto barang terdeteksi mirip $\ge 90\%$, sistem memunculkan dialog konfirmasi peringatan risiko data ganda di sistem kasir.
+    - Menyediakan tombol cepat `[ Tambah ke Barang Ada ]` sebagai aksi utama yang disarankan, `[ Tetap Simpan Baru ]`, serta `[ Batal ]`.
+- **Validasi SKU Duplikat Real-Time**:
+  - Form SKU mendeteksi secara langsung jika kode SKU yang diketikkan sudah digunakan oleh produk lain di database lokal.
+  - Border input langsung berubah menjadi merah dengan pesan: `⚠️ SKU ini sudah dipakai oleh "[Nama Produk]". Gunakan SKU lain atau tab Tambah ke Barang Ada.`
+  - Tombol simpan dinonaktifkan secara otomatis untuk mencegah kegagalan penyimpanan akibat pelanggaran integritas data *unique constraint*.
+- **Pembaruan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.7.0** (Build 10) di Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Pengaturan.
+- **Pengujian & Verifikasi Langsung**:
+  - Diinstal dan diuji via *Wireless Debugging* pada perangkat kasir **iMin Swift 2 Pro** (Android 13, 720x1600).
+  - Terverifikasi peringatan kemiripan 94%, pengalihan tab otomatis, dialog konfirmasi duplikasi, dan validasi SKU duplikat berjalan 100% mulus dan responsif.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.7.0.apk` (`97.13 MB`)
+- SHA-256: `154F624A8D04F8CE508A9814438A7F765BD7B8001C1270E4941282D2F3D83FEA`
+
+---
+
 ## v1.6.0 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.6.0** (Build 9) (*Powered by Boostech Demo Tech*) — Fitur Penyimpanan Keranjang Multi-Barang (Persisten & Anti-Hilang).
