@@ -39,7 +39,7 @@
 | **Ukuran File** | `101.92 MB` (`SkuLens-AI-v1.9.0.apk`) |
 | **Minimal OS** | Android 7.0 (API 24) ke atas, diuji langsung di iMin Swift 2 Pro (Android 13) |
 | **File APK** | [`releases/SkuLens-AI-v1.9.0.apk`](releases/SkuLens-AI-v1.9.0.apk) |
-| **SHA-256** | `386C4D52AA87B2DF1685F27E9691A166A2BB1EA2DE910E2FD7683335B63ED905` |
+| **SHA-256** | `26DEBD8BA0504A7A976CC11FF5A1B12B91995274910FC840A6118215F2438CE9` |
 
 ### Cara Install di HP Android / Perangkat iMin POS
 
