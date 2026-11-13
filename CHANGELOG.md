@@ -1,5 +1,26 @@
 # Changelog — SkuLens AI
 
+## v1.4.1 (2026-11-13)
+
+Pembaruan optimalisasi transisi cold start & splash screen **SkuLens AI v1.4.1** (Build 7) (*Powered by Boostech Demo Tech*).
+
+### Fitur & Peningkatan
+- **Perbaikan Glitch "Double Kuning" / Blank Yellow pada Splash Screen**:
+  - Menghilangkan *transparent icon* lama pada `themes.xml` yang sebelumnya menyebabkan layar Android menampilkan bidang kuning polos kosong selama 2–3 detik saat aplikasi baru dibuka.
+  - Memasang **Splash Screen Terintegrasi** (`@drawable/splash_background` dan `windowSplashScreenAnimatedIcon` = `@drawable/app_logo`) sehingga logo **SkuLens AI** langsung tampil di tengah sejak milidetik pertama icon aplikasi ditekan tanpa menunggu Compose.
+  - Menyelaraskan skala logo dan transisi *fade-in* teks ("SkuLens AI", versi, dan kata logo Boostech) secara halus tanpa efek lompat (*jumpy scale*).
+  - Mempersingkat durasi tunggu splash agar transisi langsung masuk ke dashboard dengan mulus (~1 detik).
+- **Pembaruan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.4.1** (Build 7) pada Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Atur.
+- **Pengujian & Verifikasi Langsung**:
+  - Diinstal dan diuji *cold-start* di perangkat kasir **iMin Swift 2 Pro** (Android 13). Terverifikasi logo langsung tampil instan sejak awal proses dibuka dan seluruh data 8 SKU Room SQLite tetap utuh.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.4.1.apk` (`97.01 MB`)
+- SHA-256: `1C13D5DBC316F9331447A990F80ADE3ECAADE5194A9F28D84698573B3B45A3A4`
+
+---
+
 ## v1.4.0 (2026-11-13)
 
 Rilis pembaruan besar **SkuLens AI v1.4.0** (Build 6) (*Powered by Boostech Demo Tech*) — Pemisahan Alur Kerja Cek Kasir vs Studio Rekam 360°.
