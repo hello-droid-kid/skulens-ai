@@ -1,5 +1,41 @@
 # Changelog — SkuLens AI
 
+## v1.8.0 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.8.0** (Build 11) (*Powered by Boostech Demo Tech*) — Fitur Laporan Sesi Multi-Scan Persisten ("Jangan Hilang") & Drawer Report Terbaca di Meja Kasir.
+
+### Fitur & Peningkatan Utama
+- **Akumulator Sesi Multi-Scan ("Barang Sudah Dapat Jangan Hilang")**:
+  - Mengatasi keluhan saat pemindaian meja kasir (`MultiObjectScreen`), ketika kamera bergeser atau sudut berganti, barang yang sudah terbaca seringkali langsung hilang dari layar (`totalRecognizedCount` menjadi 0 dan list kosong).
+  - Sistem kini memiliki **State Akumulasi Sesi** (`sessionReportItems` & `ScannedSessionItem`):
+    - Seluruh barang yang berhasil dikenali oleh AI visual akan dicatat dan dipertahankan sepanjang sesi pemindaian kasir berlangsung.
+    - Status deteksi dibedakan secara visual:
+      - `🟢 Live di Layar`: Objek saat ini sedang berada tepat di dalam pandangan kamera.
+      - `⏱️ Terbaca di Sesi`: Objek yang sudah pernah terbaca sebelumnya di area meja kasir dan tetap disimpan di memori sesi meskipun kamera sudah bergeser ke sudut lain.
+- **Drawer Laporan Multi-Scan Komprehensif (`MultiObjectResultsDrawer`)**:
+  - Dapat dibuka kapan saja via tombol `[ 📋 Laporan (X) ]` di HUD atas maupun bar rangkuman bawah layar.
+  - **Filter Tab Navigasi**:
+    - `[ 📋 Semua Terbaca (X pcs) ]`: Menampilkan seluruh barang yang berhasil tercatat di sesi meja kasir ini.
+    - `[ 🟢 Live di Layar (Y) ]`: Menyaring khusus barang yang sedang aktif berada di frame kamera saat ini.
+  - **Kontrol Kuantitas & Manajemen Item Langsung**:
+    - Kasir dapat menyesuaikan jumlah pcs barang secara cepat dengan tombol `[ + ]` dan `[ - ]`.
+    - Tombol `[ 🗑️ ]` untuk menghapus item yang tidak diinginkan dari sesi laporan.
+    - Menampilkan informasi lengkap: Foto produk, nama barang, kode SKU, subtotal Rupiah, serta persentase kecocokan AI tertinggi.
+  - **Aksi Cepat Transaksi**:
+    - Tombol `[ 🔄 Reset Sesi ]` dengan dialog konfirmasi untuk mengosongkan rekaman pemindaian area dan memulai meja belanja berikutnya.
+    - Tombol besar `[ 💾 Simpan ke Keranjang (X pcs • Rp ...) ]` untuk langsung memindahkan seluruh isi laporan sesi ke keranjang belanja lokal secara persisten.
+- **Pembaruan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.8.0** (Build 11) di Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Pengaturan.
+- **Pengujian & Verifikasi Langsung**:
+  - Diinstal dan diuji via *Wireless Debugging* pada perangkat kasir **iMin Swift 2 Pro** (Android 13, 720x1600).
+  - Tampilan Bottom Peek Bar, Drawer Laporan Sesi, tombol reset sesi, dan tombol simpan ke keranjang terverifikasi 100% mulus dan responsif.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.8.0.apk` (`97.09 MB`)
+- SHA-256: `12398B98BA0CEFAECE82B260A5DC42CF415C483FC2680D1155F8F069C4B2E941`
+
+---
+
 ## v1.7.0 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.7.0** (Build 10) (*Powered by Boostech Demo Tech*) — Validasi Deteksi Kemiripan Visual AI $\ge$ 90% & Pencegahan Data Barang Ganda (Anti-Double).
