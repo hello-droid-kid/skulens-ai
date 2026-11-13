@@ -1,17 +1,31 @@
 # Changelog — SkuLens AI
 
+## v1.2.0 (2026-11-13)
+
+Penyempurnaan tata letak navigasi bawah (*Floating Wave Navbar*) agar lebih luas, lega, dan nyaman digunakan di layar sentuh kasir **iMin Swift 2 Pro**.
+
+### Fitur & Peningkatan Baru
+- **Tata Letak Navbar Lebih Lega**: Logo pada bilah navigasi bawah dihilangkan sehingga seluruh lebar pill charcoal digunakan penuh secara proporsional untuk ke-5 tab (**Home**, **Scan**, **Multi**, **Model**, **Atur**).
+- **Kubah Gelombang Cair Simetris**: Animasi gelombang amber (*liquid wave arch*) kini bergerak penuh dan presisi menaungi ikon tab aktif dari ujung kiri hingga ujung kanan.
+- **Area Sentuh (Hit Target) Lebih Luas**: Tiap tab memiliki ruang sentuh yang lebih lega dan nyaman bagi jari kasir.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.2.0.apk` (`97.00 MB`)
+- SHA-256: `213B17507422692CEFA698532A7E254FAB50106956EC9DC5B30BD987E9FC5387`
+
+---
+
 ## v1.1.0 (2026-11-13)
 
 Pembaruan besar untuk estetika antarmuka, navigasi interaktif, dan analitik visual performa AI pada **SkuLens AI** (*Powered by Boostech Demo Tech*).
 
-### Fitur & Peningkatan Baru
+### Fitur & Peningkatan
 - **Animasi Perpindahan Halaman (Page Transitions)**: Transisi halus arah horizontal (slide + fade + scale lembut `0.96f -> 1f`) saat berpindah antar-tab, lengkap dengan animasi vertikal pada judul dan subjudul `TopAppBar`.
-- **Indikator Versi Aplikasi**: Menampilkan badge `v1.1.0` di `TopAppBar`, teks versi di Splash Screen, hero header dashboard, dan kartu detail **"Tentang Aplikasi & Versi"** di tab Pengaturan.
+- **Indikator Versi Aplikasi**: Menampilkan badge versi di `TopAppBar`, teks versi di Splash Screen, hero header dashboard, dan kartu detail **"Tentang Aplikasi & Versi"** di tab Pengaturan.
 - **Grafik Dashboard Teranimasi (Home Analytics)**:
   - **Grafik Performa AI (Dual-Ring Donut Gauge)**: Cincin teranimasi untuk *Avg Sukses %* (gradasi oranye-kuning) dan *Kemiripan AI %* (charcoal), rasio scan *Cocok vs Gagal*, serta tombol *Reset Statistik*.
   - **Grafik Sudut Data Model (Vertical Column Bar Chart)**: Diagram kolom batang naik bertingkat (*staggered*) menampilkan kelengkapan sudut model 360° per produk dengan garis target kesiapan `4` sudut (*Siap 360°*) hingga `8` sudut. Kolom dapat diketuk langsung untuk menambah sudut foto produk.
 - **Deteksi Multi-Objek Area**: Dukungan deteksi banyak barang sekaligus dalam satu frame kamera dengan hitungan jumlah produk (`Nx`) dan rincian bottom drawer.
-- **Floating Liquid Wave Navbar**: Bilah navigasi melayang berbentuk kapsul charcoal gelap dengan kubah gelombang amber dinamis mengikuti tab yang dipilih.
 
 ### Berkas Rilis
 - `releases/SkuLens-AI-v1.1.0.apk` (`97.31 MB`)
