@@ -1,13 +1,27 @@
 # Changelog — SkuLens AI
 
+## v1.3.0 (2026-11-13)
+
+Pembaruan versi resmi **SkuLens AI v1.3.0** (Build 4) (*Powered by Boostech Demo Tech*).
+
+### Fitur & Peningkatan
+- **Peningkatan Versi Aplikasi**: Pembaruan penomoran versi menjadi `v1.3.0` di seluruh antarmuka (Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Pengaturan).
+- **Tata Letak Navbar Lega & Luas**: Bilah navigasi bawah (*Floating Wave Navbar*) memanfaatkan 100% lebar kapsul untuk 5 menu utama (**Home**, **Scan**, **Multi**, **Model**, **Atur**) dengan kubah gelombang amber yang presisi dan nyaman disentuh pada layar sentuh POS.
+- **Dashboard Analitik Teranimasi**: Dual-ring donut gauge dan vertical column bar chart terintegrasi dengan data model produk real-time.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.3.0.apk` (`97.00 MB`)
+- SHA-256: `617E56BBAE81E77B407F51852D84310CD3921F679127E8D8270F96720CAB529D`
+
+---
+
 ## v1.2.0 (2026-11-13)
 
 Penyempurnaan tata letak navigasi bawah (*Floating Wave Navbar*) agar lebih luas, lega, dan nyaman digunakan di layar sentuh kasir **iMin Swift 2 Pro**.
 
-### Fitur & Peningkatan Baru
-- **Tata Letak Navbar Lebih Lega**: Logo pada bilah navigasi bawah dihilangkan sehingga seluruh lebar pill charcoal digunakan penuh secara proporsional untuk ke-5 tab (**Home**, **Scan**, **Multi**, **Model**, **Atur**).
+### Fitur & Peningkatan
+- **Tata Letak Navbar Lebih Lega**: Logo pada bilah navigasi bawah dihilangkan sehingga seluruh lebar pill charcoal digunakan penuh secara proporsional untuk ke-5 tab.
 - **Kubah Gelombang Cair Simetris**: Animasi gelombang amber (*liquid wave arch*) kini bergerak penuh dan presisi menaungi ikon tab aktif dari ujung kiri hingga ujung kanan.
-- **Area Sentuh (Hit Target) Lebih Luas**: Tiap tab memiliki ruang sentuh yang lebih lega dan nyaman bagi jari kasir.
 
 ### Berkas Rilis
 - `releases/SkuLens-AI-v1.2.0.apk` (`97.00 MB`)
@@ -21,10 +35,7 @@ Pembaruan besar untuk estetika antarmuka, navigasi interaktif, dan analitik visu
 
 ### Fitur & Peningkatan
 - **Animasi Perpindahan Halaman (Page Transitions)**: Transisi halus arah horizontal (slide + fade + scale lembut `0.96f -> 1f`) saat berpindah antar-tab, lengkap dengan animasi vertikal pada judul dan subjudul `TopAppBar`.
-- **Indikator Versi Aplikasi**: Menampilkan badge versi di `TopAppBar`, teks versi di Splash Screen, hero header dashboard, dan kartu detail **"Tentang Aplikasi & Versi"** di tab Pengaturan.
-- **Grafik Dashboard Teranimasi (Home Analytics)**:
-  - **Grafik Performa AI (Dual-Ring Donut Gauge)**: Cincin teranimasi untuk *Avg Sukses %* (gradasi oranye-kuning) dan *Kemiripan AI %* (charcoal), rasio scan *Cocok vs Gagal*, serta tombol *Reset Statistik*.
-  - **Grafik Sudut Data Model (Vertical Column Bar Chart)**: Diagram kolom batang naik bertingkat (*staggered*) menampilkan kelengkapan sudut model 360° per produk dengan garis target kesiapan `4` sudut (*Siap 360°*) hingga `8` sudut. Kolom dapat diketuk langsung untuk menambah sudut foto produk.
+- **Grafik Dashboard Teranimasi (Home Analytics)**: Dual-Ring Donut Gauge & Vertical Column Bar Chart.
 - **Deteksi Multi-Objek Area**: Dukungan deteksi banyak barang sekaligus dalam satu frame kamera dengan hitungan jumlah produk (`Nx`) dan rincian bottom drawer.
 
 ### Berkas Rilis
@@ -42,10 +53,6 @@ Rilis publik pertama **SkuLens AI** (*Powered by Boostech Demo Tech*).
 - Database lokal Room SQLite untuk menyimpan **Nama Barang**, **SKU**, **Harga**, **Kategori**, **Catatan**, dan multi-sampel foto AI.
 - Slide-up **Recognized Product Drawer** otomatis ketika barang cocok ditemukan.
 - Mode **Rekam 360° Otomatis** (hingga 8 sudut berbeda) lengkap dengan dialog instruksi sebelum perekaman dimulai.
-- Pembacaan barcode SKU otomatis (ZXing) & dukungan USB HID scanner.
-- Pemilih kamera bawaan / eksternal USB UVC untuk berbagai tipe perangkat **iMin POS**.
-- Preset kepekaan visual (**Peka 58%**, **Normal 64%**, **Ketat 74%**) dan pengaturan ukuran kotak fokus.
-- Identitas visual tema **Amber-Oranye (`#F59E0B`) + Charcoal (`#18181B`)**, splash screen tunggal dengan logo **SkuLens AI** dan wordmark resmi **Boostech Demo Tech**.
 
 ### Berkas Rilis
 - `releases/SkuLens-AI-v1.0.0.apk` (`92.85 MB`)
