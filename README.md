@@ -4,16 +4,17 @@
   <p><strong>Smart Computer Vision &amp; SKU Recognition untuk Perangkat Android &amp; iMin POS</strong></p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-v1.8.0-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.8.0" />
+    <img src="https://img.shields.io/badge/Version-v1.9.0-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.9.0" />
     <img src="https://img.shields.io/badge/Offline_AI-100%25_On--Device-18181B?style=for-the-badge" alt="100% Offline" />
     <img src="https://img.shields.io/badge/Android-7.0%2B_(API_24%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 7.0+" />
     <img src="https://img.shields.io/badge/iMin_POS-Ready-F59E0B?style=for-the-badge" alt="iMin POS Ready" />
+    <img src="https://img.shields.io/badge/Printer-iMin_&_Bluetooth-166534?style=for-the-badge&logo=print&logoColor=white" alt="Printer Ready" />
   </p>
 
   <p>
-    <a href="releases/SkuLens-AI-v1.8.0.apk"><strong>⬇️ Unduh APK Langsung (v1.8.0 — 97.09 MB)</strong></a>
+    <a href="releases/SkuLens-AI-v1.9.0.apk"><strong>⬇️ Unduh APK Langsung (v1.9.0 — 101.92 MB)</strong></a>
     &nbsp;•&nbsp;
-    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.8.0"><strong>📦 Halaman Release</strong></a>
+    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.9.0"><strong>📦 Halaman Release</strong></a>
     &nbsp;•&nbsp;
     <a href="CHANGELOG.md"><strong>📝 Catatan Rilis</strong></a>
   </p>
@@ -23,7 +24,7 @@
 
 ## Ringkasan
 
-**SkuLens AI** adalah aplikasi Android Computer Vision **100% offline** untuk mengenali barang secara real-time melalui kamera, mengelola katalog **Nama + SKU + Harga + Foto Sampel** di database lokal SQLite, serta mendukung perangkat kasir **iMin POS** (tanpa Google Play Services / GMS).
+**SkuLens AI** adalah aplikasi Android Computer Vision **100% offline** untuk mengenali barang secara real-time melalui kamera, mengelola katalog **Nama + SKU + Harga + Foto Sampel** di database lokal SQLite, serta mendukung perangkat kasir **iMin POS** dan integrasi **Printer Struk Kasir (Internal iMin & Bluetooth Thermal)** dengan Logo Toko Boostech.
 
 > Repositori ini merupakan repositori **rilis & distribusi APK resmi** (tanpa source code).
 
@@ -34,34 +35,34 @@
 | Item | Detail |
 | --- | --- |
 | **Nama Aplikasi** | SkuLens AI (`com.harapan.kenalbarang`) |
-| **Versi** | `v1.8.0` (Build 11 — Universal Debug APK) |
-| **Ukuran File** | `97.09 MB` (`SkuLens-AI-v1.8.0.apk`) |
+| **Versi** | `v1.9.0` (Build 12 — Universal Debug APK) |
+| **Ukuran File** | `101.92 MB` (`SkuLens-AI-v1.9.0.apk`) |
 | **Minimal OS** | Android 7.0 (API 24) ke atas, diuji langsung di iMin Swift 2 Pro (Android 13) |
-| **File APK** | [`releases/SkuLens-AI-v1.8.0.apk`](releases/SkuLens-AI-v1.8.0.apk) |
-| **SHA-256** | `12398B98BA0CEFAECE82B260A5DC42CF415C483FC2680D1155F8F069C4B2E941` |
+| **File APK** | [`releases/SkuLens-AI-v1.9.0.apk`](releases/SkuLens-AI-v1.9.0.apk) |
+| **SHA-256** | `386C4D52AA87B2DF1685F27E9691A166A2BB1EA2DE910E2FD7683335B63ED905` |
 
 ### Cara Install di HP Android / Perangkat iMin POS
 
-1. Unduh [`releases/SkuLens-AI-v1.8.0.apk`](releases/SkuLens-AI-v1.8.0.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
+1. Unduh [`releases/SkuLens-AI-v1.9.0.apk`](releases/SkuLens-AI-v1.9.0.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
 2. Buka file APK dan aktifkan izin **Install dari sumber tidak dikenal** (*Install unknown apps*) jika diminta.
-3. Buka **SkuLens AI** dan berikan izin **Kamera** saat pertama kali dijalankan.
+3. Buka **SkuLens AI** dan berikan izin **Kamera** dan **Bluetooth** saat pertama kali dijalankan.
 
 *(Opsional via ADB dari PC / Wireless Debugging)*:
 ```bash
-adb install -r SkuLens-AI-v1.8.0.apk
+adb install -r SkuLens-AI-v1.9.0.apk
 ```
 
 ---
 
 ## Tampilan Aplikasi (Diuji di iMin Swift 2 Pro)
 
-| Drawer Laporan Multi-Scan | Live Multi Area Meja | Dashboard Vision v1.8.0 |
+| Pengaturan Printer & Tes Cetak | Pilihan Bluetooth & iMin | Drawer Laporan Multi-Scan |
 | :---: | :---: | :---: |
-| <img src="assets/v180_drawer_empty.png" width="220" alt="Drawer Laporan Multi-Scan" /> | <img src="assets/v180_multi_live.png" width="220" alt="Live Multi Area Meja" /> | <img src="assets/v180_home.png" width="220" alt="Dashboard Vision v1.8.0" /> |
+| <img src="assets/screen-printer-settings.png" width="220" alt="Pengaturan Printer Kasir" /> | <img src="assets/screen-printer-bluetooth.png" width="220" alt="Pilihan Bluetooth Printer" /> | <img src="assets/v180_drawer_empty.png" width="220" alt="Drawer Laporan Multi-Scan" /> |
 
-| Peringatan Mirip 90%+ | Dialog Konfirmasi Duplikasi | Validasi SKU Duplikat |
+| Live Multi Area Meja | Dashboard Vision v1.9.0 | Peringatan Mirip 90%+ |
 | :---: | :---: | :---: |
-| <img src="assets/screen-duplicate-warning-banner.png" width="220" alt="Peringatan Mirip 90%+" /> | <img src="assets/screen-duplicate-confirm-dialog.png" width="220" alt="Dialog Konfirmasi Duplikasi" /> | <img src="assets/screen-sku-duplicate-validation.png" width="220" alt="Validasi SKU Duplikat" /> |
+| <img src="assets/v180_multi_live.png" width="220" alt="Live Multi Area Meja" /> | <img src="assets/v180_home.png" width="220" alt="Dashboard Vision v1.9.0" /> | <img src="assets/screen-duplicate-warning-banner.png" width="220" alt="Peringatan Mirip 90%+" /> |
 
 | Keranjang Multi Tersimpan | Multi Area & HUD Keranjang | Cek Barang & Flash On |
 | :---: | :---: | :---: |
@@ -71,6 +72,12 @@ adb install -r SkuLens-AI-v1.8.0.apk
 
 ## Fitur Utama
 
+- **Integrasi Printer Kasir POS & Bluetooth Thermal (Logo Boostech)**:
+  - **iMin POS Built-in Printer**: Terhubung langsung dengan hardware printer internal iMin Swift 2 Pro dan seri lainnya via library resmi `IminPrinterLibrary` & IPC Binder AIDL `com.imin.printerservice`.
+  - **Printer Bluetooth Thermal Eksternal**: Mendukung printer kasir ESC/POS Bluetooth via SPP RFCOMM standar (58mm dan 80mm).
+  - **Header Struk Logo Boostech**: Logo Wordmark Boostech dikonversi secara presisi menjadi 1-bit monochrome raster bitmap di bagian atas struk belanja kasir.
+  - **Cetak Instan dari Multi-Scan**: Tombol `[ 🖨️ Cetak Struk Laporan ]` di Drawer Laporan dan `[ 🖨️ Cetak Struk Belanja ]` di Keranjang Kasir untuk mencetak struk belanja rapi (nomor transaksi, tanggal, qty, rincian harga, total belanja, dan footer resmi).
+  - **Tes Cetak Cepat**: Tombol `[ 🧾 🖨️ Tes Cetak Struk Kasir ]` di menu Pengaturan untuk verifikasi hardware printer.
 - **Penyimpanan Keranjang Multi-Scan (Anti-Hilang)**:
   - Tombol instan `[ 💾 Simpan ]` di bar bawah dan drawer untuk mengunci & menyimpan barang yang terdeteksi di area meja kasir.
   - **Data Tidak Pernah Hilang**: Hasil deteksi barang tersimpan secara persisten di penyimpanan lokal, tidak hilang saat barang diangkat, kamera dipindah, atau saat berganti tab aplikasi.

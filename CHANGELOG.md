@@ -1,5 +1,47 @@
 # Changelog — SkuLens AI
 
+## v1.9.0 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.9.0** (Build 12) (*Powered by Boostech Demo Tech*) — Integrasi Printer Kasir Hardware iMin POS & Bluetooth Thermal ESC/POS dengan Cetak Struk Logo Boostech dari Multi-Scan.
+
+### Fitur & Peningkatan Utama
+- **Integrasi Printer Kasir Hardware iMin POS (Built-in Internal Printer)**:
+  - Integrasi resmi menggunakan `IminPrinterLibrary:V2.0.0.18` yang langsung terhubung ke layanan sistem `com.imin.printerservice` via AIDL IPC.
+  - Mendukung inisialisasi otomatis printer saat aplikasi dibuka (`🟢 iMin POS Internal Printer Siap`).
+  - Cetak teks resolusi tinggi, feed kertas otomatis, dan potong kertas (*partial cut*).
+- **Integrasi Printer Bluetooth Thermal ESC/POS Eksternal**:
+  - Pengaturan koneksi printer Bluetooth standard via profil Serial Port (SPP RFCOMM `00001101-0000-1000-8000-00805F9B34FB`).
+  - Fitur enumerasi perangkat paired (*bonded devices*) dengan tombol penyegaran `[ 🔄 Segarkan ]`.
+  - Pilihan hubungkan/putuskan sambungan dengan status visual real-time (`🟢 Terhubung Bluetooth: [Device]` / `⚪ Belum Siap`).
+  - Menangani izin runtime Bluetooth otomatis untuk Android 12 & 13 (`BLUETOOTH_CONNECT`, `BLUETOOTH_SCAN`).
+- **Pilihan Lebar Kertas Thermal (58 mm & 80 mm)**:
+  - Mode **58 mm**: Format standar struk kasir mini (lebar 32 kolom karakter, batas dot raster 384).
+  - Mode **80 mm**: Format standar struk kasir lebar (lebar 48 kolom karakter, batas dot raster 576).
+  - Pengaturan tersimpan secara persisten di SharedPreferences (`skulens_printer_prefs`).
+- **Format Struk Kasir Otentik dengan Logo Boostech**:
+  - Konversi gambar Logo Wordmark Boostech (`boostech_wordmark.png`) menjadi bitmap 1-bit monochrome raster ESC/POS perataan tengah (*align center*).
+  - Header toko resmi: `BOOSTECH AI VISION POS` & `SKULENS KASIR PINTAR`.
+  - Informasi transaksi rapi: No. Transaksi, Tanggal & Jam, Kasir, dan Metode Pembayaran.
+  - Garis pemisah ganda / putus-putus.
+  - Rincian belanja: Nama produk, jumlah pcs x harga satuan, dan subtotal rata kanan.
+  - Grand total tebal (*bold double-size*).
+  - Footer: Ucapan terima kasih, catatan garansi, dan *Powered by Boostech Demo Tech*.
+- **Cetak Struk Langsung dari Meja Kasir Multi-Scan**:
+  - **Drawer Laporan Hasil Multi-Scan (`MultiObjectResultsDrawer`)**: Tombol tebal `[ 🖨️ Cetak Struk Laporan (Logo Boostech) ]` untuk mencetak seluruh akumulasi item yang terbaca di sesi kasir tanpa membuka keranjang.
+  - **Modal Keranjang Belanja Kasir (`SavedBasketModal`)**: Tombol `[ 🖨️ Cetak Struk Belanja (Logo Boostech) ]` untuk mencetak struk transaksi belanja kasir resmi.
+  - **Menu Pengaturan / Atur (`SettingsAndIminScreen`)**: Tombol `[ 🧾 🖨️ Tes Cetak Struk Kasir (Logo Boostech) ]` untuk menguji printer kapan saja.
+- **Pembaruan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.9.0** (Build 12) di Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Pengaturan.
+- **Pengujian & Verifikasi Langsung**:
+  - Diinstal dan diuji via *Wireless Debugging* pada perangkat kasir **iMin Swift 2 Pro** (Android 13, 720x1600).
+  - Terverifikasi pencetakan struk pengujian kasir berhasil dicetak pada hardware iMin internal (`com.imin.printerservice`) dan pemindaian bluetooth printer sukses mendeteksi `InnerPrinter`.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.9.0.apk` (`101.92 MB`)
+- SHA-256: `386C4D52AA87B2DF1685F27E9691A166A2BB1EA2DE910E2FD7683335B63ED905`
+
+---
+
 ## v1.8.0 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.8.0** (Build 11) (*Powered by Boostech Demo Tech*) — Fitur Laporan Sesi Multi-Scan Persisten ("Jangan Hilang") & Drawer Report Terbaca di Meja Kasir.
