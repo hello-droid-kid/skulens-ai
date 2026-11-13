@@ -1,5 +1,27 @@
 # Changelog — SkuLens AI
 
+## v1.4.0 (2026-11-13)
+
+Rilis pembaruan besar **SkuLens AI v1.4.0** (Build 6) (*Powered by Boostech Demo Tech*) — Pemisahan Alur Kerja Cek Kasir vs Studio Rekam 360°.
+
+### Fitur & Peningkatan Utama
+- **Pemisahan Mode "Cek Barang (Kasir)" vs "Rekam 360° (Daftar)"**:
+  - Mengganti tombol ganda yang membingungkan (`1 Sisi`, `Scan 360°`, `Rekam 360°`) dengan **Segmented Mode Switcher** modern di atas frame kamera:
+    - **Mode Cek Barang (Kasir)**: Dikhususkan untuk kasir membaca dan mencocokkan barang yang sudah terdaftar secara instan. Menampilkan nama produk, SKU, harga, dan skor kecocokan %. Jika barang belum dikenal, muncul kartu *"BARANG TIDAK DIKENAL"* dengan satu tombol jelas: `[ 🎥 Daftarkan & Rekam 360° ]`.
+    - **Mode Rekam 360° (Daftar)**: Dikhususkan untuk enrollment produk baru. Membuka studio panduan 360° dengan cincin progres 8 segmen melingkar, skor ketajaman visual, auto/manual capture saat rotasi, dan form input SKU.
+- **Peningkatan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.4.0** (Build 6) pada Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Atur.
+- **Pembersihan Antarmuka Kamera**:
+  - Area kamera menjadi jauh lebih lega, bersih, dan bebas tombol yang tumpang-tindih.
+- **Pengujian & Verifikasi Langsung**:
+  - Diinstal dan diverifikasi melalui *Wireless Debugging* di perangkat kasir **iMin Swift 2 Pro** (Android 13) dengan seluruh data 8 SKU produk Room SQLite tetap aman dan utuh.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.4.0.apk` (`97.01 MB`)
+- SHA-256: `B9CF08976BA06348DB97E4EDB6ED3B3DE6D69F952C48491C7182C9F6420EE2C0`
+
+---
+
 ## v1.3.1 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.3.1** (Build 5) (*Powered by Boostech Demo Tech*).

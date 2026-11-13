@@ -4,16 +4,16 @@
   <p><strong>Smart Computer Vision &amp; SKU Recognition untuk Perangkat Android &amp; iMin POS</strong></p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-v1.3.1-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.3.1" />
+    <img src="https://img.shields.io/badge/Version-v1.4.0-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.4.0" />
     <img src="https://img.shields.io/badge/Offline_AI-100%25_On--Device-18181B?style=for-the-badge" alt="100% Offline" />
     <img src="https://img.shields.io/badge/Android-7.0%2B_(API_24%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 7.0+" />
     <img src="https://img.shields.io/badge/iMin_POS-Ready-F59E0B?style=for-the-badge" alt="iMin POS Ready" />
   </p>
 
   <p>
-    <a href="releases/SkuLens-AI-v1.3.1.apk"><strong>⬇️ Unduh APK Langsung (v1.3.1 — 97.00 MB)</strong></a>
+    <a href="releases/SkuLens-AI-v1.4.0.apk"><strong>⬇️ Unduh APK Langsung (v1.4.0 — 97.01 MB)</strong></a>
     &nbsp;•&nbsp;
-    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.3.1"><strong>📦 Halaman Release</strong></a>
+    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.4.0"><strong>📦 Halaman Release</strong></a>
     &nbsp;•&nbsp;
     <a href="CHANGELOG.md"><strong>📝 Catatan Rilis</strong></a>
   </p>
@@ -34,35 +34,38 @@
 | Item | Detail |
 | --- | --- |
 | **Nama Aplikasi** | SkuLens AI (`com.harapan.kenalbarang`) |
-| **Versi** | `v1.3.1` (Build 5 — Universal Debug APK) |
-| **Ukuran File** | `97.00 MB` (`SkuLens-AI-v1.3.1.apk`) |
+| **Versi** | `v1.4.0` (Build 6 — Universal Debug APK) |
+| **Ukuran File** | `97.01 MB` (`SkuLens-AI-v1.4.0.apk`) |
 | **Minimal OS** | Android 7.0 (API 24) ke atas, diuji langsung di iMin Swift 2 Pro (Android 13) |
-| **File APK** | [`releases/SkuLens-AI-v1.3.1.apk`](releases/SkuLens-AI-v1.3.1.apk) |
-| **SHA-256** | `03BB6BD899A935BBCA53118BC19661F8ED97BDB6BB0F0FD67AA6A4917F0388EC` |
+| **File APK** | [`releases/SkuLens-AI-v1.4.0.apk`](releases/SkuLens-AI-v1.4.0.apk) |
+| **SHA-256** | `B9CF08976BA06348DB97E4EDB6ED3B3DE6D69F952C48491C7182C9F6420EE2C0` |
 
 ### Cara Install di HP Android / Perangkat iMin POS
 
-1. Unduh [`releases/SkuLens-AI-v1.3.1.apk`](releases/SkuLens-AI-v1.3.1.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
+1. Unduh [`releases/SkuLens-AI-v1.4.0.apk`](releases/SkuLens-AI-v1.4.0.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
 2. Buka file APK dan aktifkan izin **Install dari sumber tidak dikenal** (*Install unknown apps*) jika diminta.
 3. Buka **SkuLens AI** dan berikan izin **Kamera** saat pertama kali dijalankan.
 
 *(Opsional via ADB dari PC / Wireless Debugging)*:
 ```bash
-adb install -r SkuLens-AI-v1.3.1.apk
+adb install -r SkuLens-AI-v1.4.0.apk
 ```
 
 ---
 
 ## Tampilan Aplikasi (Diuji di iMin Swift 2 Pro)
 
-| Splash Screen (v1.3.1) | Dashboard & Grafik AI | Navbar Luas & Rapi |
+| Cek Barang (Kasir) | Rekam 360° (Studio) | Dashboard & Grafik AI |
 | :---: | :---: | :---: |
-| <img src="assets/screen-splash.png" width="220" alt="Splash Screen" /> | <img src="assets/screen-home-charts.png" width="220" alt="Dashboard & Grafik AI" /> | <img src="assets/screen-settings.png" width="220" alt="Pengaturan & Versi" /> |
+| <img src="assets/screen-scanner-kasir.png" width="220" alt="Cek Barang Kasir" /> | <img src="assets/screen-scanner-rekam360.png" width="220" alt="Rekam 360 Studio" /> | <img src="assets/screen-home-charts.png" width="220" alt="Dashboard AI Charts" /> |
 
 ---
 
 ## Fitur Utama
 
+- **Pemisahan Mode Alur Kerja Jelas**:
+  - **Cek Barang (Kasir)**: Khusus scan cepat barang yang sudah ada. Mengeluarkan kartu SKU & harga langsung di layar. Jika barang belum terdaftar, terdapat tombol cepat satu klik `[ Daftarkan & Rekam 360° ]`.
+  - **Rekam 360° (Daftar Produk Baru)**: Studio khusus pendaftaran barang baru dengan panduan cincin 8 sisi, auto-capture deteksi rotasi, thumbnail strip, dan form pengisian SKU.
 - **Floating Wave Navbar Luas & Lega**: Logo pada navbar bawah dilepas sehingga seluruh ruang horizontal terisi merata untuk 5 menu utama (**Home**, **Scan**, **Multi**, **Model**, **Atur**) dengan kubah gelombang oranye yang dinamis.
 - **Animasi Antarmuka & Navigasi**: Perpindahan antar-halaman halus (slide + fade + scale), judul TopAppBar teranimasi secara vertikal saat berganti menu.
 - **Dashboard Analitik Teranimasi**:
@@ -71,10 +74,6 @@ adb install -r SkuLens-AI-v1.3.1.apk
 - **Pengenalan Barang Real-Time (Offline AI)**: Menggunakan model *on-device* MobileNetV3 + cosine similarity embedding yang langsung berjalan di perangkat tanpa koneksi internet.
 - **Deteksi Banyak Barang (Area)**: Mampu mengenali dan menghitung jumlah beberapa barang sekaligus dalam satu frame kamera dengan rincian subtotal di bottom drawer.
 - **Drawer Informasi Otomatis**: Saat barang dikenali, panel detail (*bottom drawer*) otomatis naik menampilkan foto, nama produk, **SKU**, harga, kategori, catatan, tingkat kecocokan (`%`), serta tombol **Tambah Sisi** dan **Scan Lagi**.
-- **Mode Rekam 360° Otomatis**: Menampilkan panduan langkah sebelum mulai, lalu otomatis memotret hingga **8 sisi berbeda** saat barang diputar perlahan agar pengenalan jauh lebih peka dan cepat dari segala sudut.
-- **Database Lokal & Barcode SKU**:
-  - Jika barang belum dikenal, ambil foto **1 Sisi** atau **Rekam 360°**, lalu masukkan **Nama Barang**, **SKU** (ketik manual, scan kamera ZXing, auto-generate, atau pakai scanner USB HID), harga, dan kategori.
-  - Edit data produk, kelola sampel foto, atau tambah sudut foto baru kapan saja di tab **Daftar Data Model**.
 - **Preset Kepekaan Visual**: Pilih preset **Peka (58%)**, **Normal (64%)**, atau **Ketat (74%)**, serta atur ukuran kotak fokus kamera di tab **Pengaturan**.
 
 ---
