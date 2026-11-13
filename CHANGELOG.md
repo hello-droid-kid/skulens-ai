@@ -1,5 +1,33 @@
 # Changelog — SkuLens AI
 
+## v1.5.0 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.5.0** (Build 8) (*Powered by Boostech Demo Tech*) — Tombol Lampu Flash Hardware & Kontrol Jeda (Pause) Rekam 360°.
+
+### Fitur & Peningkatan Utama
+- **Tombol Lampu Senter / Flash Kamera Hardware**:
+  - Mendeteksi ketersediaan unit lampu kilat hardware (`camera.cameraInfo.hasFlashUnit()`) secara dinamis.
+  - Menampilkan tombol pill `[ ⚡ Flash ]` / `[ ⚡ Flash ON ]` di kontrol HUD kamera pada mode *Cek Barang*, *Rekam 360°*, dan *Multi-Objek*.
+  - Mengontrol lampu LED senter fisik perangkat secara langsung (`enableTorch`) untuk pencahayaan optimal di kondisi meja kasir yang remang/gelap.
+- **Kontrol Jeda / Pause 360° ("Supaya Tidak Semuanya Ter-capture")**:
+  - **Pencegahan Tangkapan Beruntun (Burst Prevention)**: Menaikkan interval aman antar jepretan otomatis menjadi 1,4 detik dan memperketat batas kesamaan sudut visual (novelty threshold) agar kamera tidak memotret liar saat barang baru mulai diputar.
+  - **Floating Control di Bawah Viewfinder**:
+    - Tombol Merah `[ ⏸️ Jeda Auto (X/8) ]` untuk menghentikan pengambilan otomatis seketika saat memutar barang.
+    - Tombol Hijau `[ ▶️ Lanjut Auto (X/8) ]` untuk melanjutkan auto-capture setelah sudut barang siap.
+    - Tombol Kuning `[ 📸 Jepret Sisi Ini ]` untuk mengambil satu sudut foto secara manual kapan pun kasir inginkan.
+  - **Panel Bawah Interaktif**: Menambahkan tombol berlabel jelas `[ ⏸️ Jeda Auto ]` / `[ ▶️ Lanjut Auto ]` serta `[ 📸 Jepret +1 ]` dengan teks panduan status visual.
+- **Pembaruan Versi Sistem**:
+  - Versi aplikasi dinaikkan ke **v1.5.0** (Build 8) di Splash Screen, TopAppBar, Dashboard Vision AI On-Device, dan Tab Pengaturan.
+- **Pengujian & Verifikasi Langsung**:
+  - Diinstal dan diuji via *Wireless Debugging* pada perangkat kasir **iMin Swift 2 Pro** (Android 13).
+  - Lampu LED fisik terbukti menyala terang dan menerangi meja scanner. Tombol Jeda berfungsi membekukan auto-capture dengan aman tanpa merusak 8 SKU produk Room SQLite yang tersimpan.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.5.0.apk` (`97.01 MB`)
+- SHA-256: `0E772C0D71A2E970E40037D28A0848B3C1C7F847E91FB39613CF6B785681F00B`
+
+---
+
 ## v1.4.1 (2026-11-13)
 
 Pembaruan optimalisasi transisi cold start & splash screen **SkuLens AI v1.4.1** (Build 7) (*Powered by Boostech Demo Tech*).

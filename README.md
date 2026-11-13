@@ -4,16 +4,16 @@
   <p><strong>Smart Computer Vision &amp; SKU Recognition untuk Perangkat Android &amp; iMin POS</strong></p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-v1.4.1-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.4.1" />
+    <img src="https://img.shields.io/badge/Version-v1.5.0-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.5.0" />
     <img src="https://img.shields.io/badge/Offline_AI-100%25_On--Device-18181B?style=for-the-badge" alt="100% Offline" />
     <img src="https://img.shields.io/badge/Android-7.0%2B_(API_24%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 7.0+" />
     <img src="https://img.shields.io/badge/iMin_POS-Ready-F59E0B?style=for-the-badge" alt="iMin POS Ready" />
   </p>
 
   <p>
-    <a href="releases/SkuLens-AI-v1.4.1.apk"><strong>⬇️ Unduh APK Langsung (v1.4.1 — 97.01 MB)</strong></a>
+    <a href="releases/SkuLens-AI-v1.5.0.apk"><strong>⬇️ Unduh APK Langsung (v1.5.0 — 97.01 MB)</strong></a>
     &nbsp;•&nbsp;
-    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.4.1"><strong>📦 Halaman Release</strong></a>
+    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.5.0"><strong>📦 Halaman Release</strong></a>
     &nbsp;•&nbsp;
     <a href="CHANGELOG.md"><strong>📝 Catatan Rilis</strong></a>
   </p>
@@ -34,38 +34,43 @@
 | Item | Detail |
 | --- | --- |
 | **Nama Aplikasi** | SkuLens AI (`com.harapan.kenalbarang`) |
-| **Versi** | `v1.4.1` (Build 7 — Universal Debug APK) |
-| **Ukuran File** | `97.01 MB` (`SkuLens-AI-v1.4.1.apk`) |
+| **Versi** | `v1.5.0` (Build 8 — Universal Debug APK) |
+| **Ukuran File** | `97.01 MB` (`SkuLens-AI-v1.5.0.apk`) |
 | **Minimal OS** | Android 7.0 (API 24) ke atas, diuji langsung di iMin Swift 2 Pro (Android 13) |
-| **File APK** | [`releases/SkuLens-AI-v1.4.1.apk`](releases/SkuLens-AI-v1.4.1.apk) |
-| **SHA-256** | `1C13D5DBC316F9331447A990F80ADE3ECAADE5194A9F28D84698573B3B45A3A4` |
+| **File APK** | [`releases/SkuLens-AI-v1.5.0.apk`](releases/SkuLens-AI-v1.5.0.apk) |
+| **SHA-256** | `0E772C0D71A2E970E40037D28A0848B3C1C7F847E91FB39613CF6B785681F00B` |
 
 ### Cara Install di HP Android / Perangkat iMin POS
 
-1. Unduh [`releases/SkuLens-AI-v1.4.1.apk`](releases/SkuLens-AI-v1.4.1.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
+1. Unduh [`releases/SkuLens-AI-v1.5.0.apk`](releases/SkuLens-AI-v1.5.0.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
 2. Buka file APK dan aktifkan izin **Install dari sumber tidak dikenal** (*Install unknown apps*) jika diminta.
 3. Buka **SkuLens AI** dan berikan izin **Kamera** saat pertama kali dijalankan.
 
 *(Opsional via ADB dari PC / Wireless Debugging)*:
 ```bash
-adb install -r SkuLens-AI-v1.4.1.apk
+adb install -r SkuLens-AI-v1.5.0.apk
 ```
 
 ---
 
 ## Tampilan Aplikasi (Diuji di iMin Swift 2 Pro)
 
-| Cek Barang (Kasir) | Rekam 360° (Studio) | Dashboard & Grafik AI |
+| Cek Barang & Flash On | Rekam 360° (Jeda/Pause) | Dashboard & Grafik AI |
 | :---: | :---: | :---: |
-| <img src="assets/screen-scanner-kasir.png" width="220" alt="Cek Barang Kasir" /> | <img src="assets/screen-scanner-rekam360.png" width="220" alt="Rekam 360 Studio" /> | <img src="assets/screen-home-charts.png" width="220" alt="Dashboard AI Charts" /> |
+| <img src="assets/screen-scanner-flash.png" width="220" alt="Cek Barang & Senter Flash" /> | <img src="assets/screen-scanner-rekam-paused.png" width="220" alt="Rekam 360 Jeda Kontrol" /> | <img src="assets/screen-home-charts.png" width="220" alt="Dashboard AI Charts" /> |
 
 ---
 
 ## Fitur Utama
 
+- **Lampu Flash Kamera Hardware (LED Senter)**: Tombol cerdas `[ ⚡ Flash ]` di HUD kamera yang otomatis aktif jika perangkat memiliki lampu kilat kamera belakang (seperti pada iMin Swift 2 Pro), membantu pengenalan akurat di ruangan minim cahaya.
+- **Kontrol Jeda (Pause) Rekam 360° Terpadu**:
+  - Tombol Mengambang `[ ⏸️ Jeda Auto ]` / `[ ▶️ Lanjut Auto ]` langsung di viewport kamera untuk membekukan jepretan otomatis saat memutar barang.
+  - Tombol manual `[ 📸 Jepret Sisi Ini ]` untuk mengambil satu sudut tertentu secara presisi.
+  - Interval tangkapan otomatis dioptimalkan (1,4 detik) dengan deteksi kebaruan sudut visual (novelty threshold) agar terhindar dari pemotretan beruntun (*burst*) yang tidak diinginkan.
 - **Pemisahan Mode Alur Kerja Jelas**:
   - **Cek Barang (Kasir)**: Khusus scan cepat barang yang sudah ada. Mengeluarkan kartu SKU & harga langsung di layar. Jika barang belum terdaftar, terdapat tombol cepat satu klik `[ Daftarkan & Rekam 360° ]`.
-  - **Rekam 360° (Daftar Produk Baru)**: Studio khusus pendaftaran barang baru dengan panduan cincin 8 sisi, auto-capture deteksi rotasi, thumbnail strip, dan form pengisian SKU.
+  - **Rekam 360° (Daftar Produk Baru)**: Studio khusus pendaftaran barang baru dengan panduan cincin 8 sisi, kontrol jeda/lanjut, thumbnail strip, dan form pengisian SKU.
 - **Floating Wave Navbar Luas & Lega**: Logo pada navbar bawah dilepas sehingga seluruh ruang horizontal terisi merata untuk 5 menu utama (**Home**, **Scan**, **Multi**, **Model**, **Atur**) dengan kubah gelombang oranye yang dinamis.
 - **Animasi Antarmuka & Navigasi**: Perpindahan antar-halaman halus (slide + fade + scale), judul TopAppBar teranimasi secara vertikal saat berganti menu.
 - **Dashboard Analitik Teranimasi**:
