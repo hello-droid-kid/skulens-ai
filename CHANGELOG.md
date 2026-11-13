@@ -1,5 +1,34 @@
 # Changelog — SkuLens AI
 
+## v1.9.2 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.9.2** (Build 14) (*Powered by Boostech Demo Tech*) — Perbaikan Bug Tombol Kosongkan Multi-Scan & Solusi Deteksi Barang Bertumpuk (Stacked Objects).
+
+### Fitur & Peningkatan Utama
+- **Perbaikan Bug Tombol Kosongkan / Reset Sesi Multi-Scan**:
+  - **Akar Masalah**: Sebelumnya, saat kasir menekan *"Ya, Kosongkan"*, background camera analysis langsung mendeteksi ulang barang yang masih berada di atas meja kasir dalam hitungan 50 milidetik dan memasukkannya kembali ke sesi laporan, sehingga tombol kosongkan tampak tidak berfungsi.
+  - **Solusi**:
+    - Menambahkan mekanisme penahanan akumulasi sesi (*session suppression cooldown*): setelah dikosongkan, barang yang masih berada di atas meja tidak akan langsung mengisi ulang laporan sesi selama 3,5 detik atau hingga meja dikosongkan.
+    - Dialog konfirmasi kosongkan kini otomatis menutup drawer laporan secara instan (`onDismiss()`).
+    - Tombol *"Kosongkan Keranjang"* pada modal keranjang belanja kini sekaligus membersihkan rekaman sesi aktif sehingga meja kasir bersih total untuk transaksi berikutnya.
+- **Peningkatan Signifikan Deteksi Barang Bertumpuk (*Stacked Items Recognition*)**:
+  - **Akar Masalah**: Pustaka MediaPipe bawaan sering kali hanya mendeteksi 1 kotak besar untuk barang yang bertumpuk vertikal/horizontal, dan filter NMS standar membuang kotak deteksi yang saling tumpang tindih (*IoU threshold*).
+  - **Solusi Komprehensif**:
+    - **Peningkatan Kapasitas Detektor**: Kuota proposal objek dinaikkan dari 12 menjadi **24 proposal**, dan ambang deteksi diturunkan ke **0.18f** agar objek bertumpuk yang sebagian tertutup tetap terdeteksi.
+    - **NMS Stack-Aware**: Algoritma NMS diperbarui dengan deteksi pergeseran pusat (*center-offset awareness*). Dua objek yang bertumpuk vertikal atau bersinggungan horizontal tidak lagi dibuang oleh NMS meskipun memiliki tingkat tumpang tindih (*overlap*) tinggi.
+    - **Dekomposisi Sub-Slice Otomatis**: Jika 2-3 barang bertumpuk dideteksi sebagai satu kotak tinggi/lebar, sistem otomatis mengekstrak potongan atas (*top slice*), potongan bawah (*bottom slice*), tengah (*mid slice*), serta kiri/kanan untuk mengenali masing-masing barang secara individual.
+    - **Deduplikasi Cerdas**: Kotak kontainer besar otomatis disaring jika potongan-potongan barang di dalamnya telah cocok dengan produk yang terdaftar, menghasilkan perhitungan kuantitas yang presisi ($2$ barang bertumpuk terhitung $2$).
+- **Pembaruan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.9.2** (Build 14) di seluruh antarmuka (`✨ v1.9.2 • On-Device`).
+- **Pengujian & Instalasi Langsung**:
+  - Berhasil dipasang dan diverifikasi via *Wireless Debugging* pada perangkat kasir **iMin Swift 2 Pro** (Android 13, 720x1600).
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.9.2.apk` (`101.92 MB`)
+- SHA-256: `F2EDA7CB9E9A078E2159F5DEBCF8A27A14AB47FF225A1145B0EE3830CB3AAC29`
+
+---
+
 ## v1.9.1 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.9.1** (Build 13) (*Powered by Boostech Demo Tech*) — Penambahan Baris Kode SKU pada Struk Kasir Fisik & Fallback Cetak Multi-Scan Otomatis.
