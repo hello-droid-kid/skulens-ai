@@ -1,5 +1,28 @@
 # Changelog — SkuLens AI
 
+## v1.9.1 (2026-11-13)
+
+Rilis pembaruan **SkuLens AI v1.9.1** (Build 13) (*Powered by Boostech Demo Tech*) — Penambahan Baris Kode SKU pada Struk Kasir Fisik & Fallback Cetak Multi-Scan Otomatis.
+
+### Fitur & Peningkatan Utama
+- **Penambahan Kode SKU pada Struk Thermal**:
+  - Pada struk cetak kasir (baik iMin POS internal maupun Bluetooth thermal ESC/POS), setiap produk kini mencetak baris kode SKU secara eksplisit di bawah nama produk (`SKU: [kode_sku]`).
+  - Memudahkan verifikasi pencocokan fisik barang di meja kasir terhadap data inventaris toko.
+- **Fallback Cerdas Cetak Struk Multi-Scan**:
+  - Fungsi `printSessionReportReceipt` diperbarui: jika sesi akumulasi belum tersimpan atau baru dimulai, sistem secara otomatis mengambil barang yang sedang aktif dikenali di kamera (*live items*) sebagai data struk yang dicetak.
+  - Mencegah error "Belum ada barang di laporan multi-scan" saat kasir langsung menekan tombol cetak struk dari layar multi-scan.
+- **Pembaruan Versi Sistem**:
+  - Nomor versi dinaikkan ke **v1.9.1** (Build 13) di seluruh layar: Splash Screen, TopAppBar, Dashboard Vision AI On-Device (`✨ v1.9.1 • On-Device`), dan Tab Pengaturan.
+- **Pengujian & Instalasi Nyata**:
+  - Berhasil diinstal dan dijalankan langsung pada perangkat kasir **iMin Swift 2 Pro** (Android 13, 720x1600).
+  - Terverifikasi pada layar utama: versi `v1.9.1`, status printer kasir internal iMin aktif (`🟢 Siap`), dan fitur cetak struk berfungsi sempurna.
+
+### Berkas Rilis
+- `releases/SkuLens-AI-v1.9.1.apk` (`101.92 MB`)
+- SHA-256: `E105F73E6350DA60E341022AEAFABA2B272EF559E7B01DBD464DE117760632A7`
+
+---
+
 ## v1.9.0 (2026-11-13)
 
 Rilis pembaruan **SkuLens AI v1.9.0** (Build 12) (*Powered by Boostech Demo Tech*) — Integrasi Printer Kasir Hardware iMin POS & Bluetooth Thermal ESC/POS dengan Cetak Struk Logo Boostech dari Multi-Scan.

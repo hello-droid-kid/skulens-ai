@@ -4,7 +4,7 @@
   <p><strong>Smart Computer Vision &amp; SKU Recognition untuk Perangkat Android &amp; iMin POS</strong></p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-v1.9.0-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.9.0" />
+    <img src="https://img.shields.io/badge/Version-v1.9.1-F59E0B?style=for-the-badge&logo=android&logoColor=18181B" alt="Version v1.9.1" />
     <img src="https://img.shields.io/badge/Offline_AI-100%25_On--Device-18181B?style=for-the-badge" alt="100% Offline" />
     <img src="https://img.shields.io/badge/Android-7.0%2B_(API_24%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 7.0+" />
     <img src="https://img.shields.io/badge/iMin_POS-Ready-F59E0B?style=for-the-badge" alt="iMin POS Ready" />
@@ -12,9 +12,9 @@
   </p>
 
   <p>
-    <a href="releases/SkuLens-AI-v1.9.0.apk"><strong>⬇️ Unduh APK Langsung (v1.9.0 — 101.92 MB)</strong></a>
+    <a href="releases/SkuLens-AI-v1.9.1.apk"><strong>⬇️ Unduh APK Langsung (v1.9.1 — 101.92 MB)</strong></a>
     &nbsp;•&nbsp;
-    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.9.0"><strong>📦 Halaman Release</strong></a>
+    <a href="https://github.com/hello-droid-kid/skulens-ai/releases/tag/v1.9.1"><strong>📦 Halaman Release</strong></a>
     &nbsp;•&nbsp;
     <a href="CHANGELOG.md"><strong>📝 Catatan Rilis</strong></a>
   </p>
@@ -35,30 +35,30 @@
 | Item | Detail |
 | --- | --- |
 | **Nama Aplikasi** | SkuLens AI (`com.harapan.kenalbarang`) |
-| **Versi** | `v1.9.0` (Build 12 — Universal Debug APK) |
-| **Ukuran File** | `101.92 MB` (`SkuLens-AI-v1.9.0.apk`) |
+| **Versi** | `v1.9.1` (Build 13 — Universal Debug APK) |
+| **Ukuran File** | `101.92 MB` (`SkuLens-AI-v1.9.1.apk`) |
 | **Minimal OS** | Android 7.0 (API 24) ke atas, diuji langsung di iMin Swift 2 Pro (Android 13) |
-| **File APK** | [`releases/SkuLens-AI-v1.9.0.apk`](releases/SkuLens-AI-v1.9.0.apk) |
-| **SHA-256** | `26DEBD8BA0504A7A976CC11FF5A1B12B91995274910FC840A6118215F2438CE9` |
+| **File APK** | [`releases/SkuLens-AI-v1.9.1.apk`](releases/SkuLens-AI-v1.9.1.apk) |
+| **SHA-256** | `E105F73E6350DA60E341022AEAFABA2B272EF559E7B01DBD464DE117760632A7` |
 
 ### Cara Install di HP Android / Perangkat iMin POS
 
-1. Unduh [`releases/SkuLens-AI-v1.9.0.apk`](releases/SkuLens-AI-v1.9.0.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
+1. Unduh [`releases/SkuLens-AI-v1.9.1.apk`](releases/SkuLens-AI-v1.9.1.apk) langsung di perangkat (atau lewat halaman [Releases](https://github.com/hello-droid-kid/skulens-ai/releases)).
 2. Buka file APK dan aktifkan izin **Install dari sumber tidak dikenal** (*Install unknown apps*) jika diminta.
 3. Buka **SkuLens AI** dan berikan izin **Kamera** dan **Bluetooth** saat pertama kali dijalankan.
 
 *(Opsional via ADB dari PC / Wireless Debugging)*:
 ```bash
-adb install -r SkuLens-AI-v1.9.0.apk
+adb install -r SkuLens-AI-v1.9.1.apk
 ```
 
 ---
 
 ## Tampilan Aplikasi (Diuji di iMin Swift 2 Pro)
 
-| Pengaturan Printer & Tes Cetak | Pilihan Bluetooth & iMin | Drawer Laporan Multi-Scan |
+| Dashboard Vision v1.9.1 | Pengaturan Printer & Tes Cetak | Pilihan Bluetooth & iMin |
 | :---: | :---: | :---: |
-| <img src="assets/screen-printer-settings.png" width="220" alt="Pengaturan Printer Kasir" /> | <img src="assets/screen-printer-bluetooth.png" width="220" alt="Pilihan Bluetooth Printer" /> | <img src="assets/v180_drawer_empty.png" width="220" alt="Drawer Laporan Multi-Scan" /> |
+| <img src="assets/v191_home.png" width="220" alt="Dashboard Vision v1.9.1" /> | <img src="assets/screen-printer-settings.png" width="220" alt="Pengaturan Printer Kasir" /> | <img src="assets/screen-printer-bluetooth.png" width="220" alt="Pilihan Bluetooth Printer" /> |
 
 | Live Multi Area Meja | Dashboard Vision v1.9.0 | Peringatan Mirip 90%+ |
 | :---: | :---: | :---: |
